@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/loader.scss";
-
-class listContainer extends React.Component {
+import ListItem from "./listitem";
+class ListContainer extends React.Component {
   state = {
     loading: true,
     list: []
@@ -10,7 +10,6 @@ class listContainer extends React.Component {
   componentDidMount() {
     fetchList
       .then(list => {
-        console.log(list[2].name);
         this.setState({ list });
       })
       .then(() => this.setState({ loading: false }));
@@ -25,14 +24,22 @@ class listContainer extends React.Component {
 
     return (
       <div>
-        I'm the app <br />
-        {this.state.list[3].name}
+        <table>
+          <tr>
+            <th>name</th>
+            <th>username</th>
+
+          </tr>
+          {this.state.list.map(e => {
+            return <ListItem item={e} />
+          })}
+        </table>
       </div>
     );
   }
 }
 
-var fetchList = new Promise(function(resolve, reject) {
+var fetchList = new Promise(function (resolve, reject) {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => {
       return response.json();
@@ -45,4 +52,4 @@ var fetchList = new Promise(function(resolve, reject) {
     });
 });
 
-export default listContainer;
+export default ListContainer;
