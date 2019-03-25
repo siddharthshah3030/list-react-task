@@ -28,10 +28,9 @@ class ListContainer extends React.Component {
           <tr>
             <th>name</th>
             <th>username</th>
-
           </tr>
           {this.state.list.map(e => {
-            return <ListItem item={e} />
+            return <ListItem item={e} />;
           })}
         </table>
       </div>
@@ -39,7 +38,7 @@ class ListContainer extends React.Component {
   }
 }
 
-var fetchList = new Promise(function (resolve, reject) {
+var fetchList = new Promise(function(resolve, reject) {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => {
       return response.json();
