@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/loader.scss";
+import "../styles/listcontainer.scss";
 import ListItem from "./listitem";
 class ListContainer extends React.Component {
   state = {
@@ -17,22 +18,23 @@ class ListContainer extends React.Component {
 
   render() {
     const { loading } = this.state;
-
-    if (loading) {
-      return <div className="loader"> I am the loader</div>;
-    }
-
     return (
-      <div>
-        <table>
-          <tr>
-            <th>name</th>
-            <th>username</th>
-          </tr>
-          {this.state.list.map(e => {
-            return <ListItem item={e} />;
-          })}
-        </table>
+      <div className="tableContainer">
+        <h1 className="heading">
+          Users
+          {loading > 0 && " (loading)"}
+        </h1>
+        <div className="table">
+          <table>
+            {!loading > 0 && (
+              <tbody>
+                {this.state.list.map((e, i) => {
+                  return <ListItem key={i} item={e} />;
+                })}
+              </tbody>
+            )}
+          </table>
+        </div>
       </div>
     );
   }

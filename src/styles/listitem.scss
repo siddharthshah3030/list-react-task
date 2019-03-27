@@ -1,31 +1,37 @@
 table {
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
 td,
 th {
+  //   border: 1px solid #dddddd;
   padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.username {
+  color: grey;
+}
 .tooltip {
   position: relative;
   display: inline-block;
+  // border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  width: auto;
+  white-space: nowrap;
 
+  background-color: white;
+  color: #000;
+  border: 2px black solid;
+  border-radius: 6px;
+  padding: 0px 5px;
   position: absolute;
   z-index: 1;
   top: -5px;

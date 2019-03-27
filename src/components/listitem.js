@@ -6,6 +6,7 @@ class ListItem extends React.Component {
     loading: true,
     list: []
   };
+
   handleMouseIn() {
     this.setState({ hover: true });
   }
@@ -13,10 +14,12 @@ class ListItem extends React.Component {
   handleMouseOut() {
     this.setState({ hover: false });
   }
+
   render() {
     const tooltipStyle = {
       display: this.state.hover ? "block" : "none"
     };
+
     return (
       <tr>
         <td
@@ -26,11 +29,19 @@ class ListItem extends React.Component {
         >
           {this.props.item.name}
           <div className="tooltiptext" style={tooltipStyle}>
-            item details come here
+            <strong>Street</strong> {this.props.item.address.street}
+            <br />
+            <strong>Suit</strong> {this.props.item.address.suite}
+            <br />
+            <strong>City</strong> {this.props.item.address.city}
+            <br />
+            <strong>Zip</strong> {this.props.item.address.zipcode}
           </div>
         </td>
 
-        <td align="right">{this.props.item.username}</td>
+        <td className="username" align="right">
+          ({this.props.item.username})
+        </td>
       </tr>
     );
   }
