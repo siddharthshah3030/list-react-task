@@ -2,6 +2,7 @@
   "name": "list-new-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://siddharthshah3030.github.io/list-react-task",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
@@ -22,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
