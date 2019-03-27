@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/loader.scss";
 import "../styles/listcontainer.scss";
 import ListItem from "./listitem";
 class ListContainer extends React.Component {
