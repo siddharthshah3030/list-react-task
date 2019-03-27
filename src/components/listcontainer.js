@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/listcontainer.scss";
 import ListItem from "./listitem";
+import loader from "./assets/loader.gif";
+
 class ListContainer extends React.Component {
   state = {
     loading: true,
@@ -22,7 +24,11 @@ class ListContainer extends React.Component {
         <h1 className="heading">
           Users
           {loading > 0 && " (loading)"}
+          {loading > 0 && (
+            <img className="loaderGif" src={loader} alt="loading..." />
+          )}
         </h1>
+
         <div className="table">
           <table>
             {!loading > 0 && (
