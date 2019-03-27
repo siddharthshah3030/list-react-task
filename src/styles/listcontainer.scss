@@ -1,8 +1,10 @@
+$break-small: 680px;
+
 .table {
   border: 2px black solid;
   height: 250px;
   overflow: auto;
-  width: 50vw;
+  width: auto;
   margin: 0;
   position: relative;
   left: 50%;
@@ -12,9 +14,16 @@
 .tableContainer {
   width: 50vw;
   margin: auto;
+  @media screen and (max-width: $break-small) {
+    width: 95vw;
+    font-size: 0.8em;
+  }
 }
 
 .loaderGif {
   width: 100px;
   float: right;
+  @media screen and (max-width: $break-small) {
+    width: 60px;
+  }
 }

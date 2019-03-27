@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Box from "./components/listcontainer";
+import listContainer from "./components/listcontainer";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Box />
+        <listContainer />
       </div>
     );
   }

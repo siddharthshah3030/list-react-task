@@ -6,7 +6,11 @@ import loader from "./assets/loader.gif";
 class ListContainer extends React.Component {
   state = {
     loading: true,
-    list: []
+    list: [],
+    error: {
+      hasError: false,
+      errorInfo: {}
+    }
   };
 
   componentDidMount() {
@@ -14,11 +18,29 @@ class ListContainer extends React.Component {
       .then(list => {
         this.setState({ list });
       })
-      .then(() => this.setState({ loading: false }));
+      .then(() => this.setState({ loading: false }))
+      .catch(err => {
+        console.log(err);
+        this.setState(prevState => ({
+          error: {
+            ...prevState.error,
+            errorInfo: err,
+            hasError: true
+          }
+        }));
+      });
   }
 
   render() {
     const { loading } = this.state;
+    if (this.state.error.hasError)
+      return (
+        <div>
+          <h1>error in fetching json</h1>
+          <strong>Error message:</strong>
+          <p>{String(this.state.error.errorInfo)}</p>
+        </div>
+      );
     return (
       <div className="tableContainer">
         <h1 className="heading">
@@ -54,7 +76,7 @@ var fetchList = new Promise(function(resolve, reject) {
       resolve(data);
     })
     .catch(err => {
-      // Do something for an error here
+      reject(err);
     });
 });
 

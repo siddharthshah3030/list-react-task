@@ -3,8 +3,7 @@ import "../styles/listitem.scss";
 
 class ListItem extends React.Component {
   state = {
-    loading: true,
-    list: []
+    hover: false
   };
 
   handleMouseIn() {
@@ -38,7 +37,6 @@ class ListItem extends React.Component {
             <strong>Zip</strong> {this.props.item.address.zipcode}
           </div>
         </td>
-
         <td className="username" align="right">
           ({this.props.item.username})
         </td>
