@@ -1,14 +1,14 @@
 {
-  "main.css": "/list-react-task/static/css/main.7b15d91c.chunk.css",
-  "main.js": "/list-react-task/static/js/main.753b70fa.chunk.js",
-  "main.js.map": "/list-react-task/static/js/main.753b70fa.chunk.js.map",
-  "runtime~main.js": "/list-react-task/static/js/runtime~main.663e431f.js",
-  "runtime~main.js.map": "/list-react-task/static/js/runtime~main.663e431f.js.map",
-  "static/js/2.d6ef2abc.chunk.js": "/list-react-task/static/js/2.d6ef2abc.chunk.js",
-  "static/js/2.d6ef2abc.chunk.js.map": "/list-react-task/static/js/2.d6ef2abc.chunk.js.map",
-  "index.html": "/list-react-task/index.html",
-  "precache-manifest.dbab2b3b901ff8f57b0108ee6666acee.js": "/list-react-task/precache-manifest.dbab2b3b901ff8f57b0108ee6666acee.js",
-  "service-worker.js": "/list-react-task/service-worker.js",
-  "static/css/main.7b15d91c.chunk.css.map": "/list-react-task/static/css/main.7b15d91c.chunk.css.map",
-  "static/media/loader.gif": "/list-react-task/static/media/loader.a6a6686c.gif"
+  "main.css": "/list-react-task/build/static/css/main.7b15d91c.chunk.css",
+  "main.js": "/list-react-task/build/static/js/main.e8575b02.chunk.js",
+  "main.js.map": "/list-react-task/build/static/js/main.e8575b02.chunk.js.map",
+  "runtime~main.js": "/list-react-task/build/static/js/runtime~main.1cc4a4e2.js",
+  "runtime~main.js.map": "/list-react-task/build/static/js/runtime~main.1cc4a4e2.js.map",
+  "static/js/2.d6ef2abc.chunk.js": "/list-react-task/build/static/js/2.d6ef2abc.chunk.js",
+  "static/js/2.d6ef2abc.chunk.js.map": "/list-react-task/build/static/js/2.d6ef2abc.chunk.js.map",
+  "index.html": "/list-react-task/build/index.html",
+  "precache-manifest.29071da60d02cdda08c476f590a38f23.js": "/list-react-task/build/precache-manifest.29071da60d02cdda08c476f590a38f23.js",
+  "service-worker.js": "/list-react-task/build/service-worker.js",
+  "static/css/main.7b15d91c.chunk.css.map": "/list-react-task/build/static/css/main.7b15d91c.chunk.css.map",
+  "static/media/loader.gif": "/list-react-task/build/static/media/loader.a6a6686c.gif"
 }

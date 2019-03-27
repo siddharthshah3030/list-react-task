@@ -2,7 +2,7 @@
   "name": "list-new-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://siddharthshah3030.github.io/list-react-task",
+  "homepage": "http://siddharthshah3030.github.io/list-react-task/build",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
