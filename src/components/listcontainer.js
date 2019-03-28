@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/listcontainer.scss";
+import "../styles/listcontainer.css";
 import ListItem from "./listitem";
 import loader from "./assets/loader.gif";
 

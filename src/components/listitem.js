@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/listitem.scss";
+import "../styles/listitem.css";
 
 class ListItem extends React.Component {
   state = {

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fa5f0c278770b117c6e1",
-    "url": "/list-react-task/build/static/css/main.7b15d91c.chunk.css"
+    "revision": "85fc10f1c1e388fc2b64",
+    "url": "/list-react-task/build/static/css/main.ae8aaf77.chunk.css"
   },
   {
-    "revision": "fa5f0c278770b117c6e1",
-    "url": "/list-react-task/build/static/js/main.e8575b02.chunk.js"
+    "revision": "85fc10f1c1e388fc2b64",
+    "url": "/list-react-task/build/static/js/main.0c48469e.chunk.js"
   },
   {
     "revision": "0a9329e2c7f9a01d22f9",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/list-react-task/build/static/media/loader.a6a6686c.gif"
   },
   {
-    "revision": "d3cb89367d36af655edf61a8baa16b6f",
+    "revision": "ba898a902e88306caa5317b0720d38a8",
     "url": "/list-react-task/build/index.html"
   }
 ];
